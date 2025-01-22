@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconnaissance Faciale</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Reconnaissance Faciale</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Téléchargez une image (jpg, png) :</label>
+            <input type="file" id="file" name="file" accept=".jpg, .png" required>
+            <button type="submit">Reconnaître</button>
+        </form>
+        {% if message %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
