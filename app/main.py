@@ -5,7 +5,8 @@ import numpy as np
 import os
 from utils import recognize_face
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='/home/browngreg/hetic/Face_Reco/templates')
+
 
 @app.route('/')
 def index():
