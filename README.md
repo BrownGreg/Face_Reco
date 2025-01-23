@@ -74,7 +74,9 @@ Pour exécuter l'application dans un conteneur Docker, utilisez les commandes su
 
 ## Auteurs
 
-- Votre Nom
+- Grégory HERY
+- Othmane SENNIA
+- Pierre Marcel MISSIHOUN
 
 ## License
 
